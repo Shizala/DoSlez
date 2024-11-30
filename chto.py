@@ -26,9 +26,10 @@ class OMG(QMainWindow):
             self.qp.end()
 
     def draw(self, status):
-        R = randint(20, 100)
-        self.qp.setBrush(QColor(255, 255, 0))
-        self.qp.drawEllipse(QPointF(randint(100, 800), randint(100, 800)), R, R)
+        for _ in range(randint(1, 10)):
+            R = randint(20, 100)
+            self.qp.setBrush(QColor(255, 255, 0))
+            self.qp.drawEllipse(QPointF(randint(100, 800), randint(100, 800)), R, R)
 
 
 if __name__ == '__main__':
